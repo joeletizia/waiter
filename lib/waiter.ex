@@ -1,0 +1,2 @@
+defmodule Waiter do
+end
