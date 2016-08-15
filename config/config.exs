@@ -28,3 +28,23 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+#
+
+config :waiter, Waiter.Robot,
+  adapter: Hedwig.Adapters.Slack,
+  name: "Waiter",
+  aka: "/",
+  token: System.get_env("WAITER_BOT_SLACK_API_TOKEN"),
+  responders: [
+    {Waiter.Responders.Hello, []},
+    {Waiter.Responders.Help, []},
+    {Waiter.Responders.Lunch, []},
+  ]
+
+config :waiter, ecto_repos: [Waiter.Repo]
+
+config :waiter, Waiter.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "waiter_data",
+  username: System.get_env("WAITER_BOT_DB_USER"),
+  username: System.get_env("WAITER_BOT_DB_PASSWORD")

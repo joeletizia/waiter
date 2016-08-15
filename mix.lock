@@ -1,0 +1,13 @@
+%{"connection": {:hex, :connection, "1.0.4", "a1cae72211f0eef17705aaededacac3eb30e6625b04a6117c1b2db6ace7d5976", [:mix], []},
+  "cowlib": {:hex, :cowlib, "1.3.0", "6c80ca7f2863c0d7a21c946312baf473432b56a79e46e20bc27a3bac07c40439", [:make], []},
+  "db_connection": {:hex, :db_connection, "1.0.0-rc.4", "fad1f772c151cc6bde82412b8d72319968bc7221df8ef7d5e9d7fde7cb5c86b7", [:mix], [{:connection, "~> 1.0.2", [hex: :connection, optional: false]}, {:poolboy, "~> 1.5", [hex: :poolboy, optional: true]}, {:sbroker, "~> 1.0.0-beta.3", [hex: :sbroker, optional: true]}]},
+  "decimal": {:hex, :decimal, "1.1.2", "79a769d4657b2d537b51ef3c02d29ab7141d2b486b516c109642d453ee08e00c", [:mix], []},
+  "ecto": {:hex, :ecto, "2.0.4", "03fd3b9aa508b1383eb38c00ac389953ed22af53811aa2e504975a3e814a8d97", [:mix], [{:db_connection, "~> 1.0-rc.2", [hex: :db_connection, optional: true]}, {:decimal, "~> 1.0", [hex: :decimal, optional: false]}, {:mariaex, "~> 0.7.7", [hex: :mariaex, optional: true]}, {:poison, "~> 1.5 or ~> 2.0", [hex: :poison, optional: true]}, {:poolboy, "~> 1.5", [hex: :poolboy, optional: false]}, {:postgrex, "~> 0.11.2", [hex: :postgrex, optional: true]}, {:sbroker, "~> 1.0-beta", [hex: :sbroker, optional: true]}]},
+  "gproc": {:hex, :gproc, "0.5.0", "2df2d886f8f8a7b81a4b04aa17972b5965bbc5bf0100ea6d8e8ac6a0e7389afe", [:rebar], []},
+  "gun": {:hex, :gun, "1.0.0-pre.1", "28514327a7572234633e127c1c14c5d91991bc26ec16d3707f05962a31f0c1b5", [:rebar, :make], [{:cowlib, "1.3.0", [hex: :cowlib, optional: false]}, {:ranch, "1.1.0", [hex: :ranch, optional: false]}]},
+  "hedwig": {:hex, :hedwig, "1.0.0-rc.4", "7c134a19bec8508f8dfd308c69d37426e7bcb48f41cc0cb9366ad7514bb7fd40", [:mix], [{:gproc, "~> 0.5", [hex: :gproc, optional: false]}]},
+  "hedwig_slack": {:hex, :hedwig_slack, "0.1.0", "523a3b5130e86e9135f4b3ebdc4c1ee4120f5ba4f9d0fb4b3b7aee7d58f0da63", [:mix], [{:gun, "1.0.0-pre.1", [hex: :gun, optional: false]}, {:hedwig, "~> 1.0.0-rc.4", [hex: :hedwig, optional: false]}, {:poison, "~> 2.0", [hex: :poison, optional: false]}]},
+  "poison": {:hex, :poison, "2.2.0", "4763b69a8a77bd77d26f477d196428b741261a761257ff1cf92753a0d4d24a63", [:mix], []},
+  "poolboy": {:hex, :poolboy, "1.5.1", "6b46163901cfd0a1b43d692657ed9d7e599853b3b21b95ae5ae0a777cf9b6ca8", [:rebar], []},
+  "postgrex": {:hex, :postgrex, "0.11.2", "139755c1359d3c5c6d6e8b1ea72556d39e2746f61c6ddfb442813c91f53487e8", [:mix], [{:connection, "~> 1.0", [hex: :connection, optional: false]}, {:db_connection, "~> 1.0-rc", [hex: :db_connection, optional: false]}, {:decimal, "~> 1.0", [hex: :decimal, optional: false]}]},
+  "ranch": {:hex, :ranch, "1.1.0", "f7ed6d97db8c2a27cca85cacbd543558001fc5a355e93a7bff1e9a9065a8545b", [:make], []}}

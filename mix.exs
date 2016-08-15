@@ -14,7 +14,15 @@ defmodule Waiter.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [
+      applications: [
+        :logger,
+        :hedwig_slack,
+        :postgrex,
+        :ecto
+      ],
+      mod: {Waiter, []}
+    ]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +35,10 @@ defmodule Waiter.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:hedwig_slack, "~> 0.1"},
+      {:postgrex, ">= 0.0.0"},
+      {:ecto, "~> 2.0.0"}
+    ]
   end
 end
